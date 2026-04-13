@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface WhyData {
   id: string;
@@ -22,13 +23,17 @@ export default function WhyWeWinSection({ data }: { data: WhyData }) {
       id={data.id}
       className="relative min-h-screen flex items-center py-32 px-6"
     >
+      {/* Ambient glow */}
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[400px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto w-full">
         <SectionReveal>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
-            <span className="gradient-text">{data.title}</span>
-          </h2>
+          <div className="flex items-center gap-5 mb-6">
+            <SectionIcon sectionId={data.id} className="w-12 h-12 text-indigo-400" />
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+              <span className="gradient-text">{data.title}</span>
+            </h2>
+          </div>
         </SectionReveal>
 
         <SectionReveal>
@@ -39,6 +44,7 @@ export default function WhyWeWinSection({ data }: { data: WhyData }) {
 
         <SectionReveal>
           <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {/* Competitors */}
             <div className="p-6 rounded-2xl bg-zinc-900/30 border border-zinc-800/50">
               <h3 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">
                 {data.competitors.heading}
@@ -56,6 +62,7 @@ export default function WhyWeWinSection({ data }: { data: WhyData }) {
               </ul>
             </div>
 
+            {/* Us */}
             <div className="p-6 rounded-2xl bg-indigo-500/5 border border-indigo-500/20 glow">
               <h3 className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-4">
                 {data.us.heading}

@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface Column {
   heading: string;
@@ -27,6 +28,7 @@ export default function FeatureSection({ data }: { data: FeatureData }) {
               {String(data.number).padStart(2, "0")}
             </span>
             <div className="h-px flex-1 bg-gradient-to-r from-zinc-800 to-transparent" />
+            <SectionIcon sectionId={data.id} className="w-10 h-10 text-indigo-400/50" />
           </div>
         </SectionReveal>
 

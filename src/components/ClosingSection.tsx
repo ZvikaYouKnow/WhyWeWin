@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface ClosingData {
   id: string;
@@ -13,10 +14,14 @@ export default function ClosingSection({ data }: { data: ClosingData }) {
       id={data.id}
       className="relative min-h-[70vh] flex items-center justify-center py-32 px-6"
     >
+      {/* Ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-indigo-500/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto text-center">
         <SectionReveal>
+          <div className="flex justify-center mb-8">
+            <SectionIcon sectionId={data.id} className="w-12 h-12 text-indigo-400" />
+          </div>
           <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-12">
             {data.title}
           </h2>
