@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface WhyData {
   id: string;
@@ -27,9 +28,12 @@ export default function WhyWeWinSection({ data }: { data: WhyData }) {
 
       <div className="relative max-w-5xl mx-auto w-full">
         <SectionReveal>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6">
-            <span className="gradient-text">{data.title}</span>
-          </h2>
+          <div className="flex items-center gap-5 mb-6">
+            <SectionIcon sectionId={data.id} className="w-12 h-12 text-indigo-400" />
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+              <span className="gradient-text">{data.title}</span>
+            </h2>
+          </div>
         </SectionReveal>
 
         <SectionReveal>

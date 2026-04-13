@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface ClosingData {
   id: string;
@@ -18,6 +19,9 @@ export default function ClosingSection({ data }: { data: ClosingData }) {
 
       <div className="relative max-w-3xl mx-auto text-center">
         <SectionReveal>
+          <div className="flex justify-center mb-8">
+            <SectionIcon sectionId={data.id} className="w-12 h-12 text-indigo-400" />
+          </div>
           <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-12">
             {data.title}
           </h2>

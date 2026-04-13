@@ -1,4 +1,5 @@
 import SectionReveal from "./SectionReveal";
+import SectionIcon from "./SectionIcon";
 
 interface HeroData {
   id: string;
@@ -18,6 +19,9 @@ export default function HeroSection({ data }: { data: HeroData }) {
 
       <div className="relative max-w-4xl mx-auto text-center">
         <SectionReveal>
+          <div className="flex justify-center mb-6">
+            <SectionIcon sectionId={data.id} className="w-14 h-14 text-indigo-400" />
+          </div>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-400 tracking-wide uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
             Pitch Deck
