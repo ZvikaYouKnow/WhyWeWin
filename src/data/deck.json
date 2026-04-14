@@ -1,259 +1,97 @@
 {
   "company": "YouKnow",
-  "tagline": "The analyst you always wished you had",
   "sections": [
     {
       "id": "hero",
       "type": "hero",
       "title": "YouKnow",
-      "subtitle": "The analyst you always wished you had",
-      "body": [
-        "The world is rapidly shifting toward AI-powered data workflows. Solutions like Gemini, Claude, and built-in AI on top of BigQuery are making it easier than ever to access and query data.",
-        "Most of these tools provide answers. We are building an analyst.",
-        "YouKnow is a system that replicates \u2014 and improves upon \u2014 the best analyst you could have on your team: one that understands the business, understands the data, remembers everything, asks the right questions \u2014 and has an obsession with driving impact through action."
-      ]
+      "subtitle": "Not answers. An analyst.",
+      "body": "Everyone is building AI that queries data. We're building the analyst you always wished you had."
+    },
+    {
+      "id": "problem",
+      "type": "statement",
+      "label": "The gap",
+      "headline": "AI gives you answers. Business needs decisions.",
+      "body": "Tools query. Analysts think. That's the gap we close."
     },
     {
       "id": "team-of-analysts",
-      "type": "feature",
-      "number": 1,
-      "title": "Not another AI \u2014 a team of analysts working for you",
-      "body": [
-        "Instead of a single generic model sitting on top of your data, YouKnow behaves like a team of analysts."
-      ],
-      "columns": [
-        {
-          "heading": "Analysts who think like leaders",
-          "items": [
-            "Think in terms of business decisions",
-            "Understand trade-offs",
-            "Separate signal from noise",
-            "Focus on impact, not just analysis"
-          ]
-        },
-        {
-          "heading": "Beyond answering questions",
-          "items": [
-            "Ask guiding questions",
-            "Challenge assumptions",
-            "Help refine the problem until it becomes actionable"
-          ]
-        }
-      ],
-      "callout": "A shift from querying data to thinking with an analyst."
+      "type": "visual",
+      "label": "01",
+      "headline": "A team of analysts, not a chatbot",
+      "body": "Challenges assumptions. Asks the right questions. Refines the problem until it's actionable.",
+      "visual": "network"
     },
     {
       "id": "utility-first",
-      "type": "feature",
-      "number": 2,
-      "title": "Utility-first \u2014 from data to decisions, actions, and impact",
-      "body": [
-        "Most AI solutions stop at insights.",
-        "YouKnow is built around a simple principle: analysis that doesn't lead to action is not enough."
-      ],
-      "columns": [
-        {
-          "heading": "The full workflow",
-          "items": [
-            "Understanding the real question",
-            "Generating relevant insights",
-            "Connecting them to business context",
-            "Recommending clear actions",
-            "Connecting to execution systems (ads, tracking, etc.)",
-            "Measuring real-world impact"
-          ]
-        },
-        {
-          "heading": "Example: conversion dropped 20%",
-          "items": [
-            "What likely caused it",
-            "What should be done next",
-            "How to validate whether the fix worked"
-          ]
-        }
-      ],
-      "callout": "This turns data from something you analyze into something you operate your business with."
+      "type": "flow",
+      "label": "02",
+      "headline": "From data to impact. The full loop.",
+      "steps": ["Question", "Insight", "Context", "Action", "Measure"],
+      "body": "Analysis that doesn't lead to action is not enough."
     },
     {
       "id": "deep-knowledge",
-      "type": "feature",
-      "number": 3,
-      "title": "Deep knowledge of marketing systems + access to real data",
-      "body": [
-        "Most tools operate on a single data layer \u2014 the warehouse. YouKnow is connected to the actual systems."
-      ],
-      "columns": [
-        {
-          "heading": "System-level access",
-          "items": [
-            "Understands platforms like Meta and Google at a deep level",
-            "Accesses data directly from the source, not just processed layers",
-            "Compares across systems (ads platforms vs tracking vs BI)",
-            "Identifies inconsistencies and attribution gaps"
-          ]
-        },
-        {
-          "heading": "Distinguishes root causes",
-          "items": [
-            "A real performance issue",
-            "A creative or campaign change",
-            "A measurement or attribution problem"
-          ]
-        }
-      ],
-      "callout": "This distinction is critical \u2014 and often where wrong decisions are made."
+      "type": "visual",
+      "label": "03",
+      "headline": "Connected to real systems, not just the warehouse",
+      "body": "Meta, Google, tracking, BI — cross-referenced. Knows the difference between a real issue and a measurement problem.",
+      "visual": "layers"
     },
     {
       "id": "real-world-data",
-      "type": "feature",
-      "number": 4,
-      "title": "Built for how data actually works (and breaks)",
-      "body": [
-        "Real-world data is messy, incomplete, and biased. YouKnow is designed for that reality."
-      ],
-      "columns": [
-        {
-          "heading": "Data quality awareness",
-          "items": [
-            "Detects tracking and attribution issues",
-            "Identifies unreliable data",
-            "Understands bias and anomalies",
-            "Knows when to use raw vs aggregated data"
-          ]
-        },
-        {
-          "heading": "Beyond analysis",
-          "items": [
-            "Recommends how to improve measurement itself",
-            "Not just how to improve performance"
-          ]
-        }
-      ],
-      "callout": "Combines the mindset of: analyst + marketer + data scientist + statistician."
+      "type": "visual",
+      "label": "04",
+      "headline": "Built for how data actually breaks",
+      "body": "Detects bias. Flags unreliable sources. Recommends how to fix measurement, not just performance.",
+      "visual": "signal"
     },
     {
       "id": "memory",
-      "type": "feature",
-      "number": 5,
-      "title": "Full organizational memory and business context",
-      "body": [
-        "This is one of the most important differentiators.",
-        "YouKnow doesn't start from scratch \u2014 it builds a persistent understanding of the business over time."
-      ],
-      "columns": [
-        {
-          "heading": "It retains",
-          "items": [
-            "Past insights",
-            "Known data issues",
-            "Campaigns and when they ran",
-            "Product launches and site changes",
-            "Business decisions and their context"
-          ]
-        },
-        {
-          "heading": "In context",
-          "items": [
-            "\"This happened before due to a tracking issue\"",
-            "\"There was a launch last week that may explain this\"",
-            "\"This campaign was modified two days ago\""
-          ]
-        }
-      ],
-      "callout": "This turns it from an AI tool into an analyst that truly knows your company."
+      "type": "visual",
+      "label": "05",
+      "headline": "Full memory. Total context.",
+      "body": "Past insights, campaigns, launches, known issues — it remembers what happened and why.",
+      "visual": "memory"
     },
     {
       "id": "proactive",
-      "type": "feature",
-      "number": 6,
-      "title": "Proactive by design \u2014 not waiting for questions",
-      "body": [
-        "Most tools are reactive. YouKnow behaves like a real analyst."
-      ],
-      "columns": [
-        {
-          "heading": "Always-on intelligence",
-          "items": [
-            "Detects anomalies on its own",
-            "Pushes insights to the right stakeholders",
-            "Surfaces risks and opportunities",
-            "Asks questions that guide better thinking"
-          ]
-        }
-      ],
-      "callout": "It doesn't wait to be asked \u2014 it initiates conversations that lead to impact."
+      "type": "visual",
+      "label": "06",
+      "headline": "Doesn't wait to be asked",
+      "body": "Detects anomalies. Surfaces opportunities. Pushes insights to the right people.",
+      "visual": "pulse"
     },
     {
       "id": "tailored",
-      "type": "feature",
-      "number": 7,
-      "title": "Tailored to your business \u2014 metrics, definitions, and language",
-      "body": [
-        "YouKnow goes beyond generic metrics."
-      ],
-      "columns": [
-        {
-          "heading": "Custom-built for you",
-          "items": [
-            "Builds custom metrics specific to your business",
-            "Incorporates input from human teams",
-            "Aligns with your goals and definitions"
-          ]
-        }
-      ],
-      "callout": "This allows it to speak the language of the business, not just the data."
+      "type": "visual",
+      "label": "07",
+      "headline": "Speaks your language",
+      "body": "Custom metrics. Your definitions. Your goals. Not generic dashboards.",
+      "visual": "custom"
     },
     {
       "id": "onboarding",
-      "type": "feature",
-      "number": 8,
-      "title": "Becomes part of the team \u2014 onboarding and integration",
-      "body": [
-        "YouKnow is not just a tool you install \u2014 it joins your team."
-      ],
-      "columns": [
-        {
-          "heading": "True integration",
-          "items": [
-            "Performs onboarding into your business",
-            "Learns your systems, goals, and structure",
-            "Works directly with business users, not just analysts",
-            "Guides them all the way to decisions"
-          ]
-        }
-      ],
-      "callout": "It behaves like an analyst joining a company \u2014 but at a completely different scale."
+      "type": "visual",
+      "label": "08",
+      "headline": "Joins your team",
+      "body": "Onboards into your business. Works with everyone — not just analysts.",
+      "visual": "join"
     },
     {
       "id": "why-we-win",
-      "type": "why",
-      "title": "Why we win",
-      "body": [
-        "AI on top of data will become a commodity. The ability to consistently turn data into real business impact will not."
-      ],
-      "competitors": {
-        "heading": "Most competitors focus on",
-        "items": ["Queries", "Dashboards", "Answers"]
-      },
-      "us": {
-        "heading": "We focus on",
-        "value": "Decisions that create outcomes."
-      },
-      "pillars": [
-        "Understands the business",
-        "Understands the data",
-        "Understands the systems that generate it",
-        "Remembers history",
-        "Guides decisions"
-      ],
+      "type": "contrast",
+      "headline": "Why we win",
+      "them": ["Queries", "Dashboards", "Answers"],
+      "us": "Decisions that create outcomes.",
       "principle": "An obsession with actions that drive real impact."
     },
     {
       "id": "bottom-line",
       "type": "closing",
-      "title": "Bottom line",
       "body": "Everyone will give you AI that answers questions about data.",
-      "emphasis": "YouKnow gives you the analyst that helps you run your business with it."
+      "emphasis": "We give you the analyst that runs your business with it."
     }
   ]
 }
